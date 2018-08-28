@@ -8,19 +8,63 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv1"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:id="@+id/tv1"/>
+        android:layout_height="51dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/botOperar"
+        android:layout_marginEnd="36dp"
+        android:text="RESULTADO" />
+
     <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/et1"
-        android:hint="INGRESE UN VALOR"/>
-    <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="19dp"
+        android:hint="INGRESE UN VALOR" />
+
+    <EditText
         android:id="@+id/et2"
-        android:hint="INGRESE UN VALOR"/>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/et1"
+        android:layout_marginTop="107dp"
+        android:hint="INGRESE UN VALOR" />
+
+    <Button
+        android:id="@+id/botOperar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/et1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="232dp"
+        android:text="OPERAR" />
+
+    <RadioGroup
+        android:id="@+id/grupo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="203dp">
+
+        <RadioButton
+            android:id="@+id/rbSuma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMA" />
+
+        <RadioButton
+            android:id="@+id/rbResta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTA" />
+    </RadioGroup>
 
 </RelativeLayout>
